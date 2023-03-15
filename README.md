@@ -1,3 +1,5 @@
+LOOK AT THIS VIDEO ABOUT SHARP: https://www.youtube.com/watch?v=WtuJLcBvxI0
+
 SCRIPTS TO RUN TO START A TYPESCRIPT PROJECT
 
 downloading:
