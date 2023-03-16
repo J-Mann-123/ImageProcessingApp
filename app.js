@@ -1,5 +1,5 @@
 const sharp = require("sharp");
-// const fs = require("fs");
+const fs = require("fs");
 
 (async function () {
   try {
@@ -8,21 +8,24 @@ const sharp = require("sharp");
     // const info = await sharp("images/shapes.png").jpeg().toFile("images/edited-shapes.jpeg");
     // console.log(info);
 
-    // const image = await sharp("images/shapes.png").png().toBuffer();
-    // fs.writeFileSync("images/edited-shapes.png", image);
+    const image = await sharp("src/images/JohnWick.jpg").jpeg().toBuffer();
+    fs.writeFileSync("src/images/edited-JohnWick.jpg", image);
 
     // // Metadata
     // const metadata = await sharp("images/shapes.png").metadata();
     // console.log(metadata);
 
     // // Applies a grayscale effect to the image
-    // await sharp("images/shapes.png").grayscale().png().toFile("images/edited-shapes.png");
+    await sharp("src/images/JohnWick.jpg")
+      .grayscale()
+      .jpeg()
+      .toFile("src/images/edited-JohnWick.jpg");
 
     // // Resizes the image
-    await sharp("images/JohnWick.jpg")
+    await sharp("src/images/JohnWick.jpg")
       .resize(300, 200)
-      .jpg()
-      .toFile("images/edited-JohnWick.jpg");
+      .jpeg()
+      .toFile("src/images/edited-JohnWick.jpg");
 
     // // Any pixel value greather than or equal to the threshold value will be set to 255, otherwise it will be set to 0.
     // await sharp("images/shapes.png").threshold(100).png().toFile("images/edited-shapes.png");

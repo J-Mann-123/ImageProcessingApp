@@ -3,6 +3,7 @@ const students = express.Router();
 
 students.get("/", (req, res) => {
   res.send("Students Route");
+  // res.send(console.log("pooooop");
 });
 
 export default students;
