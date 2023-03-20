@@ -1,3 +1,8 @@
+TO RUN:
+
+1. node app - to build edited-JohnWick.jpg
+2. npm run start - to start server
+
 LOOK AT THIS VIDEO ABOUT SHARP: https://www.youtube.com/watch?v=WtuJLcBvxI0
 
 SCRIPTS TO RUN TO START A TYPESCRIPT PROJECT

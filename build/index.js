@@ -23,6 +23,7 @@ const port = 3000;
 //   }
 // });
 app.use("/api", index_1.default);
+app.use("/images", express_1.default.static(__dirname + "/images"));
 app.listen(port, () => {
     console.log(`server started at localhost:${port}`);
 });

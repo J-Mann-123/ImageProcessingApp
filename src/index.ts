@@ -22,6 +22,8 @@ const port = 3000;
 
 app.use("/api", routes);
 
+app.use("/images", express.static(__dirname + "/images"));
+
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`);
 });
