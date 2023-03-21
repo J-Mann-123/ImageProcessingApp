@@ -1,4 +1,4 @@
-const sharp = require("sharp");
+const sharp = require('sharp');
 // const fs = require("fs");
 
 (async function () {
@@ -19,10 +19,10 @@ const sharp = require("sharp");
     // await sharp("images/shapes.png").grayscale().png().toFile("images/edited-shapes.png");
 
     // // Resizes the image
-    await sharp("images/JohnWick.jpg")
+    await sharp('images/JohnWick.jpg')
       .resize(300, 200)
       .jpg()
-      .toFile("images/edited-JohnWick.jpg");
+      .toFile('images/edited-JohnWick.jpg')
 
     // // Any pixel value greather than or equal to the threshold value will be set to 255, otherwise it will be set to 0.
     // await sharp("images/shapes.png").threshold(100).png().toFile("images/edited-shapes.png");
@@ -57,6 +57,6 @@ const sharp = require("sharp");
     //   .png()
     //   .toFile("images/JohnWick.png");
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
-})();
+})()

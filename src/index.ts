@@ -1,29 +1,27 @@
-import express from "express";
-import routes from "./routes/index";
+import express from 'express'
+import routes from './routes/index'
+import sharp from 'sharp'
 
-const app = express();
-const port = 3000;
+import path from 'path'
 
-// app.get("/api/images", (req, res) => {
-//   res.send(
-//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt10366206%2F&psig=AOvVaw2butvPd8ceVfGuxLWB7VqZ&ust=1678947232693000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCKCEyP2j3f0CFQAAAAAdAAAAABAN"
-//   );
-// });
-// const sharp: unknown = require("sharp")(async function () => {
-//   try {
-//     await sharp("images/JohnWick.jpg")
-//       .resize(300, 200)
-//       .jpg()
-//       .toFile("images/JohnWick");
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
+const app = express()
+const port = 3000
 
-app.use("/api", routes);
+app.use('/api', routes)
 
-app.use("/images", express.static(__dirname + "/images"));
+app.use('/images', express.static(path.join(__dirname, 'images')))
+
+void (async function () {
+  try {
+    await sharp('images/JohnWick.jpg')
+      .resize(300, 200)
+      .jpeg()
+      .toFile('images/edited-JohnWick.jpg')
+  } catch (error) {
+    console.log(error)
+  }
+})()
 
 app.listen(port, () => {
-  console.log(`server started at localhost:${port}`);
-});
+  console.log(`server started at localhost:${port}`)
+})
