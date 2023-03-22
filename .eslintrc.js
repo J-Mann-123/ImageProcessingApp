@@ -3,9 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    "prettier"
-  ],
+  extends: 'standard-with-typescript',
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
