@@ -1,9 +1,12 @@
+This is an image processing app. It is used to process image sizes and make them smaller.
+
 TO RUN:
 
 1. node app - to build edited-JohnWick.jpg
 2. npm run start - to start server
+3. go to this site for the unedited image: http://localhost:3000/images/JohnWick.jpg
+4. then see edited image: http://localhost:3000/images/edited-JohnWick.jpg
 
-LOOK AT THIS VIDEO ABOUT SHARP: https://www.youtube.com/watch?v=WtuJLcBvxI0
 
 SCRIPTS TO RUN TO START A TYPESCRIPT PROJECT
 
