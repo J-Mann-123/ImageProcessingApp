@@ -7,6 +7,10 @@ TO RUN:
 3. go to this site for the unedited image: http://localhost:3000/images/JohnWick.jpg
 4. then see edited image: http://localhost:3000/images/edited-JohnWick.jpg
 
+TESTING:
+1. npm run start
+2. npm test
+The reason to do npm run start is because there are some tests that check if a link exists and the links will not exist until you do npm run start
 
 SCRIPTS TO RUN TO START A TYPESCRIPT PROJECT
 
