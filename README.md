@@ -6,14 +6,14 @@ It would then save the updated image into a new folder called thumbs.
 TO RUN PROJECT:
 1. npm run build - to build typescript
 2. npm run start - to start server
-3. Use this link to edit the image: http://localhost:3000/resize?imageUrl=https://localhost:3000/images/JohnWick.jpg&width=340&height=380
+3. Use this link to edit the image: http://localhost:3000/resize?images/JohnWick.jpg&width=320&height=380
 4. Edit the Width/Height and the edited file would automatically save
 5. Take a Look at edited-JohnWick.jpg in src/thumbs/edited-JohnWick.jpg
 
 HOW TO TEST PROJECT:
 1. npm run build
 2. npm run start
-3. Open this link: http://localhost:3000/resize?imageUrl=https://localhost:3000/images/JohnWick.jpg&width=340&height=380
+3. Open this link: http://localhost:3000/resize?images/JohnWick.jpg&width=320&height=380
   -  The edited-JohnWick.jpg file does not build until the link is opened
 3. Open a new terminal
 3. npm test - within new terminal

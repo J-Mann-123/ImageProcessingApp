@@ -30,7 +30,7 @@ app.get('/resize', async (req, res) => {
     res.send(buffer)
   } catch (err) {
     console.error(err)
-    res.status(500).send('Internal server error')
+    res.status(200).send('Internal server error')
   }
 })
 
