@@ -9,7 +9,7 @@ it('Should expect JohnWick.jpg to exist', () => {
 })
 
 it('Should expect edited-JohnWick.jpg to exist', () => {
-    expect(fs.existsSync('src/images/edited-JohnWick.jpg')).toBeTruthy()
+    expect(fs.existsSync('src/thumbs/edited-JohnWick.jpg')).toBeTruthy()
 })
 
 // this should return true only after npm run start has been run

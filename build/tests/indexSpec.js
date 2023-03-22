@@ -11,7 +11,7 @@ it('Should expect JohnWick.jpg to exist', () => {
     expect(fs_1.default.existsSync('src/images/JohnWick.jpg')).toBeTruthy();
 });
 it('Should expect edited-JohnWick.jpg to exist', () => {
-    expect(fs_1.default.existsSync('src/images/edited-JohnWick.jpg')).toBeTruthy();
+    expect(fs_1.default.existsSync('src/thumbs/edited-JohnWick.jpg')).toBeTruthy();
 });
 // this should return true only after npm run start has been run
 it('Should return false for an invalid link', async () => {

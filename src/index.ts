@@ -10,13 +10,14 @@ const port = 3000
 app.use('/api', routes)
 
 app.use('/images', express.static(path.join(__dirname, 'images')))
+// app.use('/thumbs', express.static(path.join(__dirname, 'thumbs')))
 
 void (async function () {
   try {
-    await sharp('images/JohnWick.jpg')
+    await sharp('src/images/JohnWick.jpg')
       .resize(300, 200)
       .jpeg()
-      .toFile('images/edited-JohnWick.jpg')
+      .toFile('src/thumbs/edited-JohnWick.jpg')
   } catch (error) {
     console.log(error)
   }

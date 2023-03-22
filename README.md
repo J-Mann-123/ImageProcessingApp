@@ -2,14 +2,15 @@ This is an image processing app. It is used to process image sizes and make them
 
 TO RUN:
 
-1. node app - to build edited-JohnWick.jpg
+1. npm run build - to build edited-JohnWick.jpg
 2. npm run start - to start server
 3. go to this site for the unedited image: http://localhost:3000/images/JohnWick.jpg
 4. then see edited image: http://localhost:3000/images/edited-JohnWick.jpg
 
 TESTING:
-1. npm run start
-2. npm test
+1. npm run build
+2. npm run start
+3. npm test
 The reason to do npm run start is because there are some tests that check if a link exists and the links will not exist until you do npm run start
 
 SCRIPTS TO RUN TO START A TYPESCRIPT PROJECT

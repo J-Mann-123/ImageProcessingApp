@@ -11,12 +11,13 @@ const app = (0, express_1.default)();
 const port = 3000;
 app.use('/api', index_1.default);
 app.use('/images', express_1.default.static(path_1.default.join(__dirname, 'images')));
+// app.use('/thumbs', express.static(path.join(__dirname, 'thumbs')))
 void (async function () {
     try {
-        await (0, sharp_1.default)('images/JohnWick.jpg')
+        await (0, sharp_1.default)('src/images/JohnWick.jpg')
             .resize(300, 200)
             .jpeg()
-            .toFile('images/edited-JohnWick.jpg');
+            .toFile('src/thumbs/edited-JohnWick.jpg');
     }
     catch (error) {
         console.log(error);
