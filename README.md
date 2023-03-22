@@ -1,17 +1,17 @@
-This is an image processing app. It is used to process image sizes and make them smaller.
+ABOUT THIS PROJECT:
 
-TO RUN:
+This is an image processing app. It is used to process image sizes and make them smaller within the URL.
+It would then save the updated image into a new folder called thumbs.
 
+TO RUN PROJECT:
 1. npm run build - to build edited-JohnWick.jpg
 2. npm run start - to start server
-3. go to this site for the unedited image: http://localhost:3000/images/JohnWick.jpg
-4. then see edited image: http://localhost:3000/thumbs/edited-JohnWick.jpg
+3. Use this link to edit the image: http://localhost:3000/resize?imageUrl=https://localhost:3000/images/JohnWick.jpg&width=340&height=380
 
-TESTING:
+HOW TO TEST PROJECT:
 1. npm run build
 2. npm run start
-3. npm test
-The reason to do npm run start is because there are some tests that check if a link exists and the links will not exist until you do npm run start
+3. npm test - NOTE: The app must be fully built and you must open the image link for this project to work
 
 SCRIPTS TO RUN TO START A TYPESCRIPT PROJECT
 
