@@ -10,7 +10,7 @@ const port = 3000
 app.use('/api', routes)
 
 app.use('/images', express.static(path.join(__dirname, 'images')))
-// app.use('/thumbs', express.static(path.join(__dirname, 'thumbs')))
+app.use('/thumbs', express.static(path.join(__dirname, 'thumbs')))
 
 void (async function () {
   try {

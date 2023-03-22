@@ -5,7 +5,7 @@ TO RUN:
 1. npm run build - to build edited-JohnWick.jpg
 2. npm run start - to start server
 3. go to this site for the unedited image: http://localhost:3000/images/JohnWick.jpg
-4. then see edited image: http://localhost:3000/images/edited-JohnWick.jpg
+4. then see edited image: http://localhost:3000/thumbs/edited-JohnWick.jpg
 
 TESTING:
 1. npm run build

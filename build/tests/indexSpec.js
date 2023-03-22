@@ -20,7 +20,7 @@ it('Should return false for an invalid link', async () => {
 });
 // this should return true only after npm run start has been run
 it('Should return false for an invalid link', async () => {
-    const response = await (0, isomorphic_fetch_1.default)('http://localhost:3000/images/edited-JohnWick.jpg');
+    const response = await (0, isomorphic_fetch_1.default)('http://localhost:3000/thumbs/edited-JohnWick.jpg');
     expect(response).toBeTruthy();
 });
 // describe('Link exists tests', () => {

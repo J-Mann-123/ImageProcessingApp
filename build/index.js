@@ -11,7 +11,7 @@ const app = (0, express_1.default)();
 const port = 3000;
 app.use('/api', index_1.default);
 app.use('/images', express_1.default.static(path_1.default.join(__dirname, 'images')));
-// app.use('/thumbs', express.static(path.join(__dirname, 'thumbs')))
+app.use('/thumbs', express_1.default.static(path_1.default.join(__dirname, 'thumbs')));
 void (async function () {
     try {
         await (0, sharp_1.default)('src/images/JohnWick.jpg')
