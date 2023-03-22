@@ -10,10 +10,10 @@ it('Should expect edited-JohnWick.jpg to exist', () => {
     expect(fs.existsSync('src/images/edited-JohnWick.jpg')).toBeTruthy()
 })
 
-import fetch, { Response } from 'node-fetch';
+import fetch from 'isomorphic-fetch';
 
 async function fetchData() {
-    const response: Response = await fetch('http://localhost:3000/images/JohnWick.jpg');
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
     const data = await response.json();
     console.log(data);
 }
