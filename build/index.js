@@ -14,7 +14,7 @@ app.use('/images', express_1.default.static(path_1.default.join(__dirname, 'imag
 void (async function () {
     try {
         await (0, sharp_1.default)('images/JohnWick.jpg')
-            .resize(30, 20)
+            .resize(300, 200)
             .jpeg()
             .toFile('images/edited-JohnWick.jpg');
     }
