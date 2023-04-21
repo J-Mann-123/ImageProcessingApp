@@ -15,8 +15,8 @@ HOW TO TEST PROJECT:
 2. npm run start
 3. Open this link: http://localhost:3000/resize?images/JohnWick.jpg&width=320&height=380
   -  The edited-JohnWick.jpg file does not build until the link is opened
-3. Open a new terminal
-3. npm test - within new terminal
+4. Open a new terminal
+5. npm test - within new terminal
 
 SCRIPTS TO RUN TO START A TYPESCRIPT PROJECT
 
