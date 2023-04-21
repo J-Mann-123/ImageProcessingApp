@@ -34,9 +34,8 @@
   "scripts": {
     "build": "npx tsc",
     "lint": "eslint src/",
-    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "jasmine": "jasmine",
-    "format": "npx prettier --write .",
+    "prettier": "npx prettier --write .",
     "test": "npm run build && npm run jasmine",
     "start": "nodemon src/index.ts"
   },
