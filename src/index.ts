@@ -18,10 +18,13 @@ app.get('/resize', async (req, res) => {
   const height = parseInt(req.query.height as string)
 
   try {
-    const buffer = await sharp(imageUrl).resize(width, height).toBuffer()
+    const buffer = await sharp(imageUrl)
+      .resize(width, height)
+      .toBuffer()
 
     // Save resized image to file
-    await sharp(buffer).toFile('src/thumbs/edited-JohnWick.jpg')
+    await sharp(buffer)
+      .toFile('src/thumbs/edited-JohnWick.jpg')
 
     res.set('Content-Type', 'image/jpeg')
     res.send(buffer)
