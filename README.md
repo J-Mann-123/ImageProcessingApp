@@ -4,6 +4,7 @@ This is an image processing app. It is used to process image sizes and make them
 It would then save the updated image into a new folder called thumbs.
 
 TO RUN PROJECT:
+
 1. npm run build - to build typescript
 2. npm run start - to start server
 3. Use this link to edit the image: http://localhost:3000/resize?images/JohnWick.jpg&width=320&height=380
@@ -11,10 +12,13 @@ TO RUN PROJECT:
 5. Take a Look at edited-JohnWick.jpg in src/thumbs/edited-JohnWick.jpg
 
 HOW TO TEST PROJECT:
+
 1. npm run build
 2. npm run start
 3. Open this link: http://localhost:3000/resize?images/JohnWick.jpg&width=320&height=380
-  -  The edited-JohnWick.jpg file does not build until the link is opened
+
+- The edited-JohnWick.jpg file does not build until the link is opened
+
 4. Open a new terminal
 5. npm test - within new terminal
 
