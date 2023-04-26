@@ -1,8 +1,7 @@
 import express from 'express'
 import routes from './routes/index'
-import sharp from 'sharp'
-
 import path from 'path'
+import { resizeImage } from './routes/sharpFunction'
 
 const app = express()
 const port = 3000
@@ -18,13 +17,7 @@ app.get('/resize', async (req, res) => {
   const height = parseInt(req.query.height as string)
 
   try {
-    const buffer = await sharp(imageUrl)
-      .resize(width, height)
-      .toBuffer()
-
-    // Save resized image to file
-    await sharp(buffer)
-      .toFile('src/thumbs/edited-JohnWick.jpg')
+    const buffer = await resizeImage(imageUrl, width, height)
 
     res.set('Content-Type', 'image/jpeg')
     res.send(buffer)
