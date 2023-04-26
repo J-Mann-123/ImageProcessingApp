@@ -16,9 +16,9 @@
     "@types/isomorphic-fetch": "^0.0.36",
     "@types/jasmine": "^4.3.1",
     "@types/node": "^18.15.3",
+    "@types/node-fetch": "^2.6.2",
     "@types/sharp": "^0.31.1",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
-    "@types/node-fetch": "^2.6.2",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
@@ -29,6 +29,7 @@
     "jasmine": "^4.5.0",
     "jasmine-spec-reporter": "^7.0.0",
     "nodemon": "^2.0.21",
+    "prettier": "2.8.8",
     "ts-node": "^10.9.1"
   },
   "scripts": {
